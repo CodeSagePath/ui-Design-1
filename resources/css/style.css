@@ -37,7 +37,9 @@ html {
 
 /*---------------------------------------------------------------*/
 
-
+.shadow-div {
+   text-shadow: 1px 1px rgba(249, 127, 81, 0.5);
+}
 
 .row {
   max-width: 1140px;
@@ -87,7 +89,7 @@ h3 {
 h2::after {
   display: block;
   height: 2px;
-  background-color: rgba(249, 127, 81, 1.0);
+  background-color: rgb(249, 127, 81);
   content: " ";
   width: 100px;
   margin: 0 auto;
@@ -130,6 +132,23 @@ h2::after {
   line-height: 120%;;
   vertical-align: middle;
   margin-top: -1px;
+}
+
+/*----------------- LINKS -----------------*/
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #f74f0f;
+  transition: border-bottom 0.2s, border 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
 }
 
 /*----------------- BUTTONS -----------------*/
@@ -332,12 +351,16 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
 }
-
 
 /*---------------------------------------------------------------*/
 
@@ -358,3 +381,4 @@ header {
 .cent {
   text-align: center;
   font-weight: 375;
+}
