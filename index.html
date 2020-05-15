@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
@@ -17,24 +17,24 @@
         <div class="row">
           <img src="resources/imgs/logo-white.png" alt="Omnifood Logo" class="logo">
           <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#delivery">Food delivery</a></li>
+            <li><a href="#working">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#form">Sign up</a></li>
           </ul>
 
         </div>
       </nav>
       <div class="hero-text-box">
         <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full" href="#hungry">I’m hungry</a>
+        <a class="btn btn-ghost" href="#more">Show me more</a>
 
       </div>
 
     </header>
 
-    <section class="section-features">
+    <section class="section-features" id="delivery">
       <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
@@ -69,7 +69,7 @@
 
     </section>
 
-    <section class="section-meals">
+    <section class="section-meals" id="hungry">
       <ul class="meals-showcase clearfix">
         <li>
           <figure class="meal-photo">
@@ -121,7 +121,7 @@
 
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="working">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -152,7 +152,7 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
@@ -237,7 +237,7 @@
 
     </section>
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="more">
       <div class="row">
         <h2>Our customers can't live without us</h2>
       </div>
@@ -337,7 +337,7 @@
     </div>
     </section>
 
-    <section class="section-form">
+    <section class="section-form" id="form">
       <div class="row">
         <h2>We're happy to hear from you</h2>
       </div>
@@ -441,6 +441,9 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
 </html>
 
 
