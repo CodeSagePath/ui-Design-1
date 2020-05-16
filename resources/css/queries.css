@@ -1,6 +1,6 @@
 
 /* Big Tablet to 1200px (widths smaller than the 1140px row) */
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1400px) {
   .hero-text-box {
     position: absolute;
     padding: 0 2%;
