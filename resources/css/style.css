@@ -131,6 +131,7 @@ h2::after {
   margin-right: 10px;
 
   /*secrets to align text and icons*/
+  
   line-height: 120%;;
   vertical-align: middle;
   margin-top: -1px;
@@ -280,7 +281,8 @@ header {
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 2px 2px #efefef;
+  -webkit-box-shadow: 0 2px 2px #efefef;
+          box-shadow: 0 2px 2px #efefef;
   z-index: 9999;
 }
 
