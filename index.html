@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-      <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet" type="text/css">
-    <meta charset="utf-8">
     <title>Omnifood</title>
   </head>
   <body>
@@ -15,25 +16,26 @@
       <nav>
         <div class="row">
           <img src="resources/imgs/logo-white.png" alt="Omnifood Logo" class="logo">
+          <img src="resources/imgs/logo.png" alt="Omnifood Logo" class="logo-black">
           <ul class="main-nav">
-            <li><a href="#">Food delivery</a></li>
-            <li><a href="#">How it works</a></li>
-            <li><a href="#">Our cities</a></li>
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#features">Food delivery</a></li>
+            <li><a href="#working">How it works</a></li>
+            <li><a href="#cities">Our cities</a></li>
+            <li><a href="#form">Sign up</a></li>
           </ul>
 
         </div>
       </nav>
       <div class="hero-text-box">
         <h1>Goodbye junk food. <br> Hello super healthy meals.</h1>
-        <a class="btn btn-full" href="#">I’m hungry</a>
-        <a class="btn btn-ghost" href="#">Show me more</a>
+        <a class="btn btn-full js--scroll-to-plan" href="#">I’m hungry</a>
+        <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
 
       </div>
 
     </header>
 
-    <section class="section-features">
+    <section class="section-features js--section-features" id="features">
       <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="long-copy">Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!</p>
@@ -41,25 +43,25 @@
       <div class="row">
         <div class="col span-1-of-4 box">
             <i class="ion-ios-infinite big-icon"></i>
-          <h3>Up to 365 days/year</h3>
+          <h3 class="shadow-div">Up to 365 days/year</h3>
           <p>Never cook again! We really mean that. Our subscription plans include up to 365 days/year coverage. You can also choose to order more flexibly if that's your style.</p>
         </div>
 
         <div class="col span-1-of-4 box">
         <i class="ion-android-alarm-clock big-icon"></i>
-            <h3>Ready in 20 minutes</h3>
+            <h3 class="shadow-div">Ready in 20 minutes</h3>
           <p>You're only twenty minutes away from your delicious and super healthy meals delivered right to your home. We work with the best chefs in each town to ensure that you're 100% happy.</p>
         </div>
 
         <div class="col span-1-of-4 box">
           <i class="ion-ios-nutrition big-icon"></i>
-          <h3>100% organic</h3>
+          <h3 class="shadow-div">100% organic</h3>
           <p>All our vegetables are fresh, organic and local. Animals are raised without added hormones or antibiotics. Good for your health, the environment, and it also tastes better!</p>
         </div>
 
         <div class="col span-1-of-4 box">
           <i class="ion-checkmark-round big-icon"></i>
-          <h3>Order anything</h3>
+          <h3 class="shadow-div">Order anything</h3>
           <p>We don't limit your creativity, which means you can order whatever you feel like. You can also choose from our menu containing over 100 delicious meals. It's up to you!</p>
 
         </div>
@@ -120,7 +122,7 @@
 
     </section>
 
-    <section class="section-steps">
+    <section class="section-steps" id="working">
       <div class="row">
         <h2>How it works &mdash; Simple as 1, 2, 3</h2>
       </div>
@@ -151,7 +153,7 @@
       </div>
     </section>
 
-    <section class="section-cities">
+    <section class="section-cities" id="cities">
       <div class="row">
         <h2>We're currently in these cities</h2>
       </div>
@@ -159,7 +161,7 @@
       <div class="row">
         <div class="col span-1-of-4 box">
           <img src="resources/imgs/lisbon-3.jpg" alt="Lisbon">
-          <h3 class="cent">Lisbon</h3>
+          <h3 class="shadow-div cent">Lisbon</h3>
           <div class="city-feature">
           <i class="ion-ios-person icon-small"></i>
             1600+ happy eaters
@@ -172,13 +174,13 @@
 
           <div class="city-feature">
           <i class="ion-social-twitter icon-small"></i>
-            @omnifood_lx
+            <a href="#">@omnifood_lx</a>
           </div>
         </div>
 
         <div class="col span-1-of-4 box">
           <img src="resources/imgs/san-francisco.jpg" alt="San Francisco">
-          <h3 class="cent">San Francisco</h3>
+          <h3 class="shadow-div cent">San Francisco</h3>
           <div class="city-feature">
           <i class="ion-ios-person icon-small"></i>
             3700+ happy eaters
@@ -191,13 +193,13 @@
 
           <div class="city-feature">
           <i class="ion-social-twitter icon-small"></i>
-            @omnifood_sf
+              <a href="#">@omnifood_sf</a>
           </div>
         </div>
 
         <div class="col span-1-of-4 box">
           <img src="resources/imgs/berlin.jpg" alt="Berlin">
-          <h3 class="cent">Berlin</h3>
+          <h3 class="shadow-div cent">Berlin</h3>
           <div class="city-feature">
           <i class="ion-ios-person icon-small"></i>
             2300+ happy eaters
@@ -210,13 +212,13 @@
 
           <div class="city-feature">
           <i class="ion-social-twitter icon-small"></i>
-            @omnifood_berlin
+              <a href="#">@omnifood_berlin</a>
           </div>
         </div>
 
         <div class="col span-1-of-4 box">
           <img src="resources/imgs/london.jpg" alt="London">
-          <h3 class="cent">London</h3>
+          <h3 class="shadow-div cent">London</h3>
           <div class="city-feature">
           <i class="ion-ios-person icon-small"></i>
             1200+ happy eaters
@@ -229,17 +231,72 @@
 
           <div class="city-feature">
           <i class="ion-social-twitter icon-small"></i>
-            @omnifood_london
+              <a href="#">@omnifood_london</a>
           </div>
         </div>
       </div>
 
     </section>
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label>Drop us a line</label>
+            </div>
 
+            <div class="col span-2-of-3">
+              <textarea name="message" rows="3" cols="30" placeholder="Your message"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col span-1-of-3">
+              <label>&nbsp;</label>
+            </div>
+
+            <div class="col span-2-of-3">
+              <input type="submit" value="Send it!">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div class="col span-1-of-2">
+          <ul class="footer-nav">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">iOS App</a></li>
+            <li><a href="#">Android App</a></li>
+          </ul>
+        </div>
+        <div class="col span-1-of-2">
+          <ul class="social-links">
+            <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+            <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+            <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+            <li><a href="#"><i class="ion-social-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <p>
+          Copyright &copy; 2020 by Omnifood. All Rights Reserved.
+        </p>
+
+      </div>
+    </footer>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+  <script src="vendors/js/jquery.waypoints.min.js"></script>
+  <script src="resources/js/script.js"></script>
 </html>
-
-
 
 
 
